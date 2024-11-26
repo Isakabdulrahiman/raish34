@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #24e3d9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .search-box {
+            background-color: rgb(239, 247, 238);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .search-box input, .search-box button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #b3a739;
+        }
+        .search-box button {
+            background-color: #28a745;
+            color: rgb(17, 17, 16);
+            border: none;
+            cursor: pointer;
+        }
+        .hotel-item {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+        }
+        .hotel-item img {
+            width: 120px;
+            height: 80px;
+            border-radius: 10px;
+        }
+        .hotel-item .details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .hotel-item button {
+            padding: 10px 20px;
+            background-color: #4faff4;
+            color: rgb(23, 21, 22);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .booking-form {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: rgb(15, 14, 14);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .booking-form input, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #f0ed3d;
+        }
+        .booking-form button {
+            background-color: #50a728;
+            color: rgb(7, 7, 7);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Booking Application</h1>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Destination" required>
+            <input type="date" placeholder="Check-in Date" required>
+            <input type="date" placeholder="Check-out Date" required>
+            <input type="number" placeholder="Number of Guests" required>
+            <button>Search Hotels</button>
+        </div>
+
+        <!-- Hotel Listing Section -->
+        <div class="hotel-list">
+            <div class="hotel-item">
+                <img src="htl1.jpeg" alt="Hotel Image">
+                <div class="details">
+                    <h3>Hotel Sunshine</h3>
+                    <p>Location: New York City</p>
+                    <p>Price per night: $120</p>
+                </div>
+                <button>Book Now</button>
+            </div>
+
+            <div class="hotel-item">
+                <img src="htl2.jpeg" alt="Hotel Image">
+                <div class="details">
+                    <h3>Grand Palace</h3>
+                    <p>Location: Las Vegas</p>
+                    <p>Price per night: $200</p>
+                </div>
+                <button>Book Now</button>
+            </div>
+
+            <div class="hotel-item">
+                <img src="htl3.jpeg" alt="Hotel Image">
+                <div class="details">
+                    <h3>Sea View Resort</h3>
+                    <p>Location: Miami</p>
+                    <p>Price per night: $150</p>
+                </div>
+                <button>Book Now</button>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>Complete Your Booking</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Credit Card Number" required>
+            <button>Confirm Booking</button>
+        </div>
+    </div>
+</body>
+</html>

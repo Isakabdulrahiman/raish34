@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>SDM POLYTECHNIC</title>
+</head>
+<body>
+    <h1><center>sdm polytechnic</center></h1>
+    <hr color="black">
+        <style>
+            #button{
+                background-color: yellow;
+
+            }
+        </style>
+        <center>
+            <button id = button><big><a href = home.html>Home</a></big></button>
+            <button id = button><big><a href =departments.html></a></big></button>
+            <button id = button><big><a href =admission.html></a></big></button>
+            <button id = button><big><a href="facility.html">facilities</a></big></button>
+            <button id = button><big><a href="form.html">application form</a></big></button>
+            <button id = button><big><a href =contact.html></a></big></button>
+        </center>
+        </body>
+        </html>
+            
+
+
